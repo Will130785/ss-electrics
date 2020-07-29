@@ -51,6 +51,35 @@ hamburger.addEventListener("click", e => {
       hoverpause: true,
       perView: 1
     }).mount();
+
+    new Glide('.options-autoplay-4', {
+      type: "carousel",
+      autoplay: 2000,
+      hoverpause: true,
+      perView: 6,
+      breakpoints: {
+        1100: {
+          perView: 3
+        },
+        900: {
+          perView: 2
+        },
+        600: {
+          perView: 1
+        }
+      }
+    }).mount();
+
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: 51.3656, lng: -0.1963};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 4, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
     
     // input.addEventListener('input', function (event) {
     //   glide.update({
