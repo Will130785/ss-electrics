@@ -12,13 +12,13 @@ NAVBAR SECTION
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: #000;
     height: 15rem;
 }
 
 /* Logo */
 .logo {
-    width: 15rem;
+    width: 25rem;
     height: auto;
 }
 
@@ -41,7 +41,14 @@ NAVBAR SECTION
 
 .nav-link {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #3ab54b;
     font-size: 1.6rem;
 }
 
@@ -107,6 +114,7 @@ HEADER SECTION
 
 .header-description p {
     font-size: 2rem;
+    color: #3ab54b;
 }
 
 /* Header certification logos */
